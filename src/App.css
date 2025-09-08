@@ -1,0 +1,32 @@
+/* Global resets */
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+
+/* Theme support */
+:root {
+  --bg: #ffffff;
+  --fg: #0f172a;
+  --card: #f8fafc;
+  --accent: #a67c52;
+}
+
+html[data-theme="dark"] {
+  --bg: #0b1020;
+  --fg: #e5e7eb;
+  --card: #111827;
+  --accent: #ddb887;
+}
+
+body { background: var(--bg); color: var(--fg); }
+.card { background: var(--card); }
+.button-accent { background: var(--accent); color: #111; }
+a { color: inherit; }
